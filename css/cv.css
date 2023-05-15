@@ -1,5 +1,7 @@
 *{
 	font-family: optima;
+		font-style : normal;
+		text-decoration : none;
 }
 body{
 	background: teal;
@@ -75,6 +77,11 @@ img{
 	align-items:center;
 	margin: 0 auto;
 }
+@media (max-width: 519px) {
+	.informations{
+		flex-direction: column;
+	}
+}
 .asside{
 	border: double 1px #9eeaf9;
 	background-color: #cff4fc;
@@ -91,6 +98,7 @@ img{
 	font-style: bold;
 	padding-top: 20px;
 	padding-bottom: 10px;
+	color: orangered;
 }
 .asside p{
 	margin: 5px;
@@ -104,6 +112,7 @@ i{
 }
 .parcours h1{
 	padding-bottom: 10px;
+	color:ivory;
 }
 .concepteur{
 	border: double 1px #9eeaf9;
@@ -111,12 +120,25 @@ i{
 
 .études{
 	padding-top: 40px;
+	padding-bottom: 40px;
 }
 .études h1{
 	padding-bottom: 10px;
 	font-style: normal;
+	color: ivory;
 }
 .tous{
 	border:double 1px #9eeaf9 ;
 	background-color: #cff4fc;
+}
+.compteur img{
+	width: 80px;
+	height: 20px;
+}
+.compteur{
+	display: flex;
+	justify-content: center;
+}
+.visiteurs{
+	width: 300px;
 }
